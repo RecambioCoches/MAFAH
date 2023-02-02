@@ -44,10 +44,10 @@ class RepuestoRepository extends ServiceEntityRepository
 //     */
 //    public function findByExampleField($value): array
 //    {
-//        return $this->createQueryBuilder('r')
-//            ->andWhere('r.exampleField = :val')
+//        return $this->createQueryBuilder('p')
+//            ->andWhere('p.exampleField = :val')
 //            ->setParameter('val', $value)
-//            ->orderBy('r.id', 'ASC')
+//            ->orderBy('p.id', 'ASC')
 //            ->setMaxResults(10)
 //            ->getQuery()
 //            ->getResult()
@@ -56,8 +56,8 @@ class RepuestoRepository extends ServiceEntityRepository
 
 //    public function findOneBySomeField($value): ?Repuesto
 //    {
-//        return $this->createQueryBuilder('r')
-//            ->andWhere('r.exampleField = :val')
+//        return $this->createQueryBuilder('p')
+//            ->andWhere('p.exampleField = :val')
 //            ->setParameter('val', $value)
 //            ->getQuery()
 //            ->getOneOrNullResult()

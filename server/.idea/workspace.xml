@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f668d27-67bb-4a59-9a24-7ef10e246c0e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/server.iml" afterDir="false" />
+    <list default="true" id="8f668d27-67bb-4a59-9a24-7ef10e246c0e" name="Changes" comment="Creacion de Controlador y Entity de Repuesto y Category">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230126120520.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230126120603.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230127085653.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RepuestoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RepuestoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Repuesto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Repuesto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/RepuestoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/RepuestoRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +98,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/bcuta/Desktop/sym-orm-ejemplos",
+    "last_opened_file_path": "C:/Users/bcuta/Desktop/MAFAH/server/migrations",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,8 +106,21 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "settings.sync",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bcuta\Desktop\MAFAH\server\migrations" />
+      <recent name="C:\Users\bcuta\Desktop\MAFAH\server\src\Controller" />
+      <recent name="C:\Users\bcuta\Desktop\MAFAH\server\src\Repository" />
+      <recent name="C:\Users\bcuta\Desktop\MAFAH\server\src\Entity" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -112,11 +130,24 @@
       <option name="presentableId" value="Default" />
       <updated>1675165403095</updated>
       <workItem from="1675165404124" duration="615000" />
-      <workItem from="1675361507745" duration="608000" />
+      <workItem from="1675361507745" duration="2066000" />
+      <workItem from="1675363696387" duration="2588000" />
     </task>
+    <task id="LOCAL-00001" summary="Creacion de Controlador y Entity de Repuesto y Category">
+      <created>1675362202319</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675362202319</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creacion de Controlador y Entity de Repuesto y Category" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion de Controlador y Entity de Repuesto y Category" />
   </component>
 </project>
