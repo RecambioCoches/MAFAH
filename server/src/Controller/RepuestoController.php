@@ -46,7 +46,7 @@ class RepuestoController extends AbstractController
                 "shortDescription"=> $repuesto->getShortDescription(),
                 "Description"=> $repuesto->getDescription(),
                 "price"=> $repuesto->getPrice(),
-                "category"=> $repuesto->getCategory(),
+                "category"=> $repuesto->getCategory()->getName(),
                 "image"=>$repuesto->getImage()
             ]
         ]);
@@ -61,15 +61,14 @@ class RepuestoController extends AbstractController
     {
         $repuestos = $doctrine->getRepository(Repuesto::class)->findAll();
         $repuestos_json=[];
-        $tmp=[];
         foreach ($repuestos as $repuesto){
-            $tmp[] = [
+            $tmp = [
                 "id" => $repuesto->getId(),
                 "name" => $repuesto->getName(),
                 "price" => $repuesto->getPrice(),
                 "shortDescription" => $repuesto->getShortDescription(),
                 "Description" => $repuesto->getDescription(),
-                "category" => $repuesto->getCategory(),
+                "category" => $repuesto->getCategory()->getName(),
                 "image"=>$repuesto->getImage()
             ];
             $repuestos_json[] = $tmp;
@@ -81,7 +80,7 @@ class RepuestoController extends AbstractController
     
     
          
-    #[Route('/repuesto/{id}', name: 'app_repuesto_details')]
+    #[Route('/repuesto/details/{id}', name: 'app_repuesto_details')]
     public function repuestodetails(  $id, ManagerRegistry $doctrine): Response
     {
         $repuesto = $doctrine->getRepository(Repuesto::class)->findOneBy([
@@ -93,7 +92,7 @@ class RepuestoController extends AbstractController
                 "shortDescription"=> $repuesto->getShortDescription(),
                 "Description"=> $repuesto->getDescription(),
                 "price"=> $repuesto->getPrice(),
-                "category"=> $repuesto->getCategory(),
+                "category"=> $repuesto->getCategory()->getName(),
                 "image"=>$repuesto->getImage()
         ];       
         return $this->json([
@@ -101,7 +100,7 @@ class RepuestoController extends AbstractController
         ]);
     }
     
-    #[Route('/repuesto/{id}/{name}', name: 'app_repuesto_edit')]
+    #[Route('/repuesto/edit/{id}/{name}', name: 'app_repuesto_edit')]
     public function repuestoedit(  $id,$name  ,   ManagerRegistry $doctrine): Response
     {
         $em = $doctrine->getManager();
@@ -121,20 +120,28 @@ class RepuestoController extends AbstractController
                 "shortDescription"=> $repuesto->getShortDescription(),
                 "Description"=> $repuesto->getDescription(),
                 "price"=> $repuesto->getPrice(),
-                "category"=> $repuesto->getCategory(),
+                "category"=> $repuesto->getCategory()->getName(),
                 "image"=>$repuesto->getImage()
         ];
         return $this->json([
             "repuesto" => $repuesto_json
         ]);
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
+    #[Route('/repuesto/delete/{id}', name: 'app_repuesto_delete')]
+    public function repuestoDelete(ManagerRegistry $doctrine, $id): Response
+    {
+        $em = $doctrine->getManager();
+        $repuesto = $doctrine->getRepository(Repuesto::class)->findOneBy([
+            "id" => $id
+        ]);
+
+        $em->remove($repuesto);
+        $em->flush();
+
+        return $this->json([
+            "message" =>"Repuesto eliminado."
+        ]);
+    }
     
 }

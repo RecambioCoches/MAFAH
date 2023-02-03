@@ -21,7 +21,10 @@ final class Version20230127085653 extends AbstractMigration
     {
         // Create product <-- los insert
         $this->addSql("insert into category (id, name) values (1, 'frenos');");
-      
+        $this->addSql("insert into category (id, name) values (2, 'motor');");
+        $this->addSql("insert into category (id, name) values (3, 'embrague');");
+        $this->addSql("insert into category (id, name) values (4, 'chasis');");
+
         $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (1, 'Mercury', '€3286,89', 'Unsp physl fx upper end rad, r arm, subs for fx w delay heal', 'Unspecified physeal fracture of upper end of radius, right arm, subsequent encounter for fracture with delayed healing', 'http://dummyimage.com/124x100.png/cc0000/ffffff', 1)");
 
         $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (2, 'Ford', '€6896,18', 'Other specified injuries of left elbow', 'Other specified injuries of left elbow', 'http://dummyimage.com/193x100.png/dddddd/000000', 1)");
