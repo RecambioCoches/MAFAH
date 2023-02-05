@@ -15,7 +15,7 @@ export class RepuestoDetailComponent implements OnInit {
     price: 0,
     shortDescription: '',
     description: '',
-    categories: [''],
+    category: '',
     image: '',
   };
   prodId: number = 0;

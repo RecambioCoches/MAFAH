@@ -21,7 +21,7 @@ export class RepuestoNewComponent implements OnInit {
     price: 0,
     shortDescription: '',
     description: '',
-    categories: [''],
+    category: '',
     image: '',
   };
 
@@ -42,7 +42,7 @@ export class RepuestoNewComponent implements OnInit {
           Validators.maxLength(50),
         ],
       ],
-      categories: '',
+      category: '',
       price: '',
       description: '',
       shortDescription: '',

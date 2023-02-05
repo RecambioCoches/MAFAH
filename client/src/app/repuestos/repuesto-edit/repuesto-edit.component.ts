@@ -34,7 +34,7 @@ export class RepuestoEditComponent implements OnInit {
     price: 0,
     shortDescription: '',
     description: '',
-    categories: [''],
+    category: '',
     image: '',
   };
 
@@ -55,7 +55,7 @@ export class RepuestoEditComponent implements OnInit {
           Validators.maxLength(50),
         ],
       ],
-      categories: '',
+      category: '',
       price: '',
       description: '',
       shortDescription: '',
@@ -87,7 +87,7 @@ export class RepuestoEditComponent implements OnInit {
       price: this.repuesto.price,
       description: this.repuesto.description,
       shortDescription: this.repuesto.shortDescription,
-      categories: this.repuesto.categories,
+      category: this.repuesto.category,
       image: this.repuesto.image,
     });
   }

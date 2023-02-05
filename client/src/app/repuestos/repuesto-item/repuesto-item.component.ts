@@ -13,7 +13,7 @@ export class RepuestoItemComponent {
     price: 0,
     shortDescription: '',
     description: '',
-    categories: [''],
+    category: '',
     image: '',
   };
 }

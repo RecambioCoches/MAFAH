@@ -4,6 +4,6 @@ export interface Repuesto {
   price: number;
   shortDescription: string;
   description: string;
-  categories: string[];
+  category: string;
   image: '';
 }
