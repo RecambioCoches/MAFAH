@@ -1,10 +1,10 @@
 <figure class="figure">
-  <img src="https://via.placeholder.com//820x320" class="figure-img img-fluid rounded">
+  <img src="{{repuesto.image}}">
   <figcaption class="figure-caption">
-    <h4>Titulo: {{repuesto.title}}</h4>
+    <h4>Nombre: {{repuesto.title}}</h4>
     <h5>Precio: {{repuesto.price | currency}}</h5>
     <h5> Descripcion: {{repuesto.description}}</h5>
-    <h5>caregoria: {{repuesto.categories}}</h5>
+    <h5>Categoria: {{repuesto.categories}}</h5>
   </figcaption>
 </figure>
 
@@ -13,12 +13,12 @@
     <button class="btn btn-outline-secondary mr-3"
             style="width:80px"
             (click)="onBack()">
-      <i class="fa fa-chevron-left"></i> Atras
+      <i class="fa fa-chevron-left"></i> Atrás
     </button>
     <button class="btn btn-outline-primary"
             style="width:80px"
             (click)="goEdit()">
-      Edit
+      Editar
     </button>
   </div>
 </div>
