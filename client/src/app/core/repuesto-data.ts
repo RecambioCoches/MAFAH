@@ -57,6 +57,33 @@ export class RepuestoData implements InMemoryDbService {
         category: 'books',
         image: 'https://via.placeholder.com/500x400',
       },
+      {
+        id: 6,
+        title: 'Chasis',
+        price: 54.99,
+        shortDescription: 'This is a short description of the Sixth Repuesto',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        category: 'books',
+        image: 'https://via.placeholder.com/500x400',
+      },
+      {
+        id: 7,
+        title: 'Luna trasera',
+        price: 54.99,
+        shortDescription: 'This is a short description of the Sixth Repuesto',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        category: 'books',
+        image: 'https://via.placeholder.com/500x400',
+      },
+      {
+        id: 8,
+        title: 'Asiento',
+        price: 54.99,
+        shortDescription: 'This is a short description of the Sixth Repuesto',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        category: 'books',
+        image: 'https://via.placeholder.com/500x400',
+      },
     ];
     return { repuestos: repuestos };
   }

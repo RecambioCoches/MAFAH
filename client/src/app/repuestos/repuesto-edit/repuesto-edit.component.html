@@ -15,7 +15,7 @@
             <input class="form-control"
                    id="repuestoNameId"
                    type="text"
-                   placeholder="Name (required)"
+                   placeholder="Nombre"
                    formControlName="title"
                    name="title" />
           </div>
@@ -27,7 +27,7 @@
           <div class="col-md-8">
             <textarea class="form-control"
                       id="shortdescriptionId"
-                      placeholder="Short Description"
+                      placeholder="Descripcion corta"
                       rows=3
                       formControlName="shortDescription"
                       name="shortDescription"></textarea>
@@ -41,7 +41,7 @@
           <div class="col-md-8">
             <textarea class="form-control"
                       id="descriptionId"
-                      placeholder="Description"
+                      placeholder="Descripcion"
                       rows=3
                       formControlName="description"
                       name="description"></textarea>
@@ -55,7 +55,7 @@
           <div class="col-md-8">
             <input class="form-control"
                       id="priceId"
-                      placeholder="Price"
+                      placeholder="Precio"
                       formControlName="price"
                       name="price" />
           </div>
@@ -82,7 +82,7 @@
           <div class="col-md-8">
             <input class="form-control"
                       id="imageId"
-                      placeholder="Image"
+                      placeholder="Enlace Imagen"
                       formControlName="image"
                       name="image" />
           </div>
@@ -90,21 +90,22 @@
   
         <div class="form-group row mb-2">
           <div class="offset-md-2 col-md-4">
-            <button class="btn btn-primary mr-3"                    
-                    type="submit">
-              Save
+            <button class="btn btn-success mr-3"
+                    type="submit"
+                    title="Guardar este repuesto">
+              Guardar
             </button>
-            <button class="btn btn-outline-secondary mr-3"                    
+            <button class="btn btn btn-warning mr-3"
                     type="button"
-                    title="Cancel your edits"
+                    title="Dejar de editar"
                     [routerLink]="['']">
-              Cancel
+              Cancelar
             </button>
-            <button class="btn btn-outline-warning"                  
+            <button class="btn btn-danger"
                     type="button"
-                    title="Delete this repuesto"
+                    title="Borrar este repuesto"
                     (click)="deleteRepuesto()">
-              Delete
+              Borrar
             </button>
           </div>
         </div>

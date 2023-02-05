@@ -97,7 +97,7 @@ export class RepuestoEditComponent implements OnInit {
       // Don't delete, it was never saved.
       this.onSaveComplete();
     } else {
-      if (confirm(`Really delete the repuesto: ${this.repuesto.title}?`)) {
+      if (confirm(`Estas seguro: ${this.repuesto.title}?`)) {
         this.repuestoService.deleteRepuesto(this.repuesto.id).subscribe(
           () => this.onSaveComplete(),
           (error: any) => (this.errorMessage = <any>error)
