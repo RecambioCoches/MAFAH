@@ -1,6 +1,6 @@
 export interface Repuesto {
   id: number;
-  title: string;
+  name: string;
   price: number;
   shortDescription: string;
   description: string;

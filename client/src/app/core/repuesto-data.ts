@@ -5,7 +5,7 @@ export class RepuestoData implements InMemoryDbService {
     let repuestos = [
       {
         id: 0,
-        title: 'Frenos',
+        name: 'Frenos',
         price: 24.99,
         shortDescription: 'This is a short description of the First Repuesto',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -14,7 +14,7 @@ export class RepuestoData implements InMemoryDbService {
       },
       {
         id: 1,
-        title: 'Matricula',
+        name: 'Matricula',
         price: 64.99,
         shortDescription: 'This is a short description of the Second Repuesto',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -23,7 +23,7 @@ export class RepuestoData implements InMemoryDbService {
       },
       {
         id: 2,
-        title: 'Suspension',
+        name: 'Suspension',
         price: 74.99,
         shortDescription: 'This is a short description of the Third Repuesto',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -32,7 +32,7 @@ export class RepuestoData implements InMemoryDbService {
       },
       {
         id: 3,
-        title: 'Retrovisor',
+        name: 'Retrovisor',
         price: 84.99,
         shortDescription: 'This is a short description of the Fourth Repuesto',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -41,7 +41,7 @@ export class RepuestoData implements InMemoryDbService {
       },
       {
         id: 4,
-        title: 'Puerta',
+        name: 'Puerta',
         price: 94.99,
         shortDescription: 'This is a short description of the Fifth Repuesto',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -50,7 +50,7 @@ export class RepuestoData implements InMemoryDbService {
       },
       {
         id: 5,
-        title: 'Parabrisas',
+        name: 'Parabrisas',
         price: 54.99,
         shortDescription: 'This is a short description of the Sixth Repuesto',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -59,7 +59,7 @@ export class RepuestoData implements InMemoryDbService {
       },
       {
         id: 6,
-        title: 'Chasis',
+        name: 'Chasis',
         price: 54.99,
         shortDescription: 'This is a short description of the Sixth Repuesto',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -68,7 +68,7 @@ export class RepuestoData implements InMemoryDbService {
       },
       {
         id: 7,
-        title: 'Luna trasera',
+        name: 'Luna trasera',
         price: 54.99,
         shortDescription: 'This is a short description of the Sixth Repuesto',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -77,7 +77,7 @@ export class RepuestoData implements InMemoryDbService {
       },
       {
         id: 8,
-        title: 'Asiento',
+        name: 'Asiento',
         price: 54.99,
         shortDescription: 'This is a short description of the Sixth Repuesto',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',

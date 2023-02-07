@@ -24,6 +24,7 @@ class RepuestoController extends AbstractController
         $repuesto->setPrice(5000);
         $repuesto->setDescription("Bueno y bonito");
         $repuesto->setShortDescription("Bueno");
+        $repuesto->setImage("https://via.placeholder.com/150");
         // Ahora, debemos agregar category a nuestros nuevos products
         $category = new Category();
         $category->setName("motor");
@@ -43,9 +44,9 @@ class RepuestoController extends AbstractController
             'repuesto' => [
                 "id" => $repuesto->getId(),
                 "name"=> $repuesto->getName(),
+                 "price"=> $repuesto->getPrice(),
                 "shortDescription"=> $repuesto->getShortDescription(),
                 "Description"=> $repuesto->getDescription(),
-                "price"=> $repuesto->getPrice(),
                 "category"=> $repuesto->getCategory()->getName(),
                 "image"=>$repuesto->getImage()
             ]
@@ -56,7 +57,7 @@ class RepuestoController extends AbstractController
     
     
      
-    #[Route('/repuesto-list', name: 'app_repuesto_list')]
+    #[Route('/repuesto-list', name: 'app_repuesto_list', methods: ["GET"])]
     public function repuestolist(ManagerRegistry $doctrine): Response
     {
         $repuestos = $doctrine->getRepository(Repuesto::class)->findAll();
@@ -73,9 +74,9 @@ class RepuestoController extends AbstractController
             ];
             $repuestos_json[] = $tmp;
         }
-        return $this->json([
-            "repuestos" => $repuestos_json
-        ]);
+        return $this->json(
+            $repuestos_json
+        );
     }
     
     

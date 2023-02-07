@@ -30,7 +30,7 @@ export class RepuestoEditComponent implements OnInit {
   prodId: number = 0;
   repuesto: Repuesto = {
     id: 0,
-    title: '',
+    name: '',
     price: 0,
     shortDescription: '',
     description: '',
@@ -79,11 +79,11 @@ export class RepuestoEditComponent implements OnInit {
       this.repuestoForm.reset();
     }
     this.repuesto = repuesto;
-    this.pageTitle = `Edit Repuesto: ${this.repuesto.title}`;
+    this.pageTitle = `Edit Repuesto: ${this.repuesto.name}`;
 
     // Update the data on the form
     this.repuestoForm.patchValue({
-      title: this.repuesto.title,
+      name: this.repuesto.name,
       price: this.repuesto.price,
       description: this.repuesto.description,
       shortDescription: this.repuesto.shortDescription,
@@ -97,7 +97,7 @@ export class RepuestoEditComponent implements OnInit {
       // Don't delete, it was never saved.
       this.onSaveComplete();
     } else {
-      if (confirm(`Estas seguro: ${this.repuesto.title}?`)) {
+      if (confirm(`Estas seguro: ${this.repuesto.name}?`)) {
         this.repuestoService.deleteRepuesto(this.repuesto.id).subscribe(
           () => this.onSaveComplete(),
           (error: any) => (this.errorMessage = <any>error)

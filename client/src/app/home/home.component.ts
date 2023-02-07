@@ -14,6 +14,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.repuestoService
       .getRepuestos()
-      .subscribe((data: Repuesto[]) => (this.repuestos = data));
+      .subscribe((data: Repuesto[]) => {
+        this.repuestos = data
+      });
   }
+  
 }

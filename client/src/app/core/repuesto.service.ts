@@ -10,16 +10,18 @@ import { Repuesto } from '../shared/repuesto';
   providedIn: 'root',
 })
 export class RepuestoService {
-  private repuestosUrl = 'api/repuestos';
+  private repuestosUrl = 'http://localhost:8000/repuesto-list';
 
   constructor(private http: HttpClient) {}
-
   getRepuestos(): Observable<Repuesto[]> {
-    return this.http.get<Repuesto[]>(this.repuestosUrl).pipe(
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+
+    return this.http.get<any>(this.repuestosUrl,{headers}).pipe(
       tap((data) => console.log(JSON.stringify(data))),
       catchError(this.handleError)
     );
   }
+  
 
   getMaxRepuestoId(): Observable<number> {
     return this.http.get<Repuesto[]>(this.repuestosUrl).pipe(

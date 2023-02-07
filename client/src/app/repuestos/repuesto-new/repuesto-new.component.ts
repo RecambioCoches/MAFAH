@@ -17,7 +17,7 @@ export class RepuestoNewComponent implements OnInit {
   prodId: number = 0;
   repuesto: Repuesto = {
     id: 0,
-    title: '',
+    name: '',
     price: 0,
     shortDescription: '',
     description: '',
