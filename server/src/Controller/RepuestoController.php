@@ -13,52 +13,48 @@ class RepuestoController extends AbstractController
     public function __constructor(ManagerRegistry $doctrine){}
        
     
-    #[Route('/repuesto', name: 'app_repuesto')]
-    public function index(ManagerRegistry $doctrine): Response
+    #[Route('/repuesto/new/{name}/{price}/{shortDescription}/{description}/{categoryName}/{image}', name: 'app_repuesto')]
+    public function index(ManagerRegistry $doctrine,$name,$price,$shortDescription,$description,$categoryName,$image): Response
     {
         // Entity manager
         $em = $doctrine->getManager();
         
         $repuesto = new Repuesto();
-        $repuesto->setName("Motor");
-        $repuesto->setPrice(5000);
-        $repuesto->setDescription("Bueno y bonito");
-        $repuesto->setShortDescription("Bueno");
-        $repuesto->setImage("https://via.placeholder.com/150");
-        // Ahora, debemos agregar category a nuestros nuevos products
-        $category = new Category();
-        $category->setName("motor");
-        $em->persist($category);
-        // Otra alternativa, sería asociar a una categoría existente
-     /*   $category = $doctrine->getRepository(Category::class)->findOneBy([
-            "name" => "miscellaneous"
-        ]);*/
-        $repuesto->setCategory($category);
+        $repuesto->setName($name);
+        $repuesto->setPrice($price);
+        $repuesto->setDescription($description);
+        $repuesto->setShortDescription($shortDescription);
+        $repuesto->setImage($image);
 
-        // Insert en base de datos
+        $categoryTemp = $doctrine->getRepository(Category::class)->findOneBy([
+            "name" => $categoryName]);
+        if ($categoryTemp != null){
+            $category = new Category();
+            $category->setName($categoryName);
+            $em->persist($category);
+        }else{
+            $repuesto->setCategory($categoryTemp);
+        }
+
         $em->persist($repuesto);
         $em->flush();
         
         
-        return $this->json([
-            'repuesto' => [
+        return $this->json(
+            [
                 "id" => $repuesto->getId(),
                 "name"=> $repuesto->getName(),
                  "price"=> $repuesto->getPrice(),
                 "shortDescription"=> $repuesto->getShortDescription(),
-                "Description"=> $repuesto->getDescription(),
+                "description"=> $repuesto->getDescription(),
                 "category"=> $repuesto->getCategory()->getName(),
                 "image"=>$repuesto->getImage()
             ]
-        ]);
+        );
     }
-    
-    
-    
-    
      
-    #[Route('/repuesto-list', name: 'app_repuesto_list', methods: ["GET"])]
-    public function repuestolist(ManagerRegistry $doctrine): Response
+    #[Route('/repuesto', name: 'app_repuesto_list', methods: ["GET"])]
+    public function repuesto(ManagerRegistry $doctrine): Response
     {
         $repuestos = $doctrine->getRepository(Repuesto::class)->findAll();
         $repuestos_json=[];
@@ -68,7 +64,7 @@ class RepuestoController extends AbstractController
                 "name" => $repuesto->getName(),
                 "price" => $repuesto->getPrice(),
                 "shortDescription" => $repuesto->getShortDescription(),
-                "Description" => $repuesto->getDescription(),
+                "description" => $repuesto->getDescription(),
                 "category" => $repuesto->getCategory()->getName(),
                 "image"=>$repuesto->getImage()
             ];
@@ -81,7 +77,7 @@ class RepuestoController extends AbstractController
     
     
          
-    #[Route('/repuesto/details/{id}', name: 'app_repuesto_details')]
+    #[Route('/repuesto/details/{id}', name: 'app_repuesto_details', methods: ["GET"])]
     public function repuestodetails(  $id, ManagerRegistry $doctrine): Response
     {
         $repuesto = $doctrine->getRepository(Repuesto::class)->findOneBy([
@@ -91,17 +87,17 @@ class RepuestoController extends AbstractController
                 "id" => $repuesto->getId(),
                 "name"=> $repuesto->getName(),
                 "shortDescription"=> $repuesto->getShortDescription(),
-                "Description"=> $repuesto->getDescription(),
+                "description"=> $repuesto->getDescription(),
                 "price"=> $repuesto->getPrice(),
                 "category"=> $repuesto->getCategory()->getName(),
                 "image"=>$repuesto->getImage()
         ];       
-        return $this->json([
-            "repuesto" => $repuesto_json
-        ]);
+        return $this->json(
+            $repuesto_json
+        );
     }
     
-    #[Route('/repuesto/edit/{id}/{name}', name: 'app_repuesto_edit')]
+    #[Route('/repuesto/edit/{id}/{name}', name: 'app_repuesto_edit', methods: ["PUT"])]
     public function repuestoedit(  $id,$name  ,   ManagerRegistry $doctrine): Response
     {
         $em = $doctrine->getManager();
@@ -119,14 +115,14 @@ class RepuestoController extends AbstractController
                 "id" => $repuesto->getId(),
                 "name"=> $repuesto->getName(),
                 "shortDescription"=> $repuesto->getShortDescription(),
-                "Description"=> $repuesto->getDescription(),
+                "description"=> $repuesto->getDescription(),
                 "price"=> $repuesto->getPrice(),
                 "category"=> $repuesto->getCategory()->getName(),
                 "image"=>$repuesto->getImage()
         ];
-        return $this->json([
-            "repuesto" => $repuesto_json
-        ]);
+        return $this->json(
+            $repuesto_json
+        );
     }
 
     #[Route('/repuesto/delete/{id}', name: 'app_repuesto_delete')]

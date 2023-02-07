@@ -5,27 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f668d27-67bb-4a59-9a24-7ef10e246c0e" name="Changes" comment="Creacion de Controlador y Entity de Repuesto y Category">
-      <change beforePath="$PROJECT_DIR$/../client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/core/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/core/core.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/core/repuesto-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/core/repuesto-data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/repuesto-data.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/app/core/repuesto.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/core/repuesto.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/home/home.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-detail/repuesto-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-detail/repuesto-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-detail/repuesto-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-detail/repuesto-detail.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-edit/repuesto-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-edit/repuesto-edit.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-item/repuesto-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-item/repuesto-item.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-item/repuesto-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-item/repuesto-item.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-new/repuesto-new.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-new/repuesto-new.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/shared/repuesto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/shared/repuesto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e403bc02-2166-40a5-bc9d-23ba2162610c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e403bc02-2166-40a5-bc9d-23ba2162610c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e403bc02-2166-40a5-bc9d-23ba2162610c/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e403bc02-2166-40a5-bc9d-23ba2162610c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20230127085653.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20230127085653.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/RepuestoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RepuestoController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +42,65 @@
     <servers>
       <server host="localhost" id="b3464d98-dc17-4de6-890b-dfdf7fa790e9" name="symfony-server" port="8000" />
     </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/proxy-manager-lts" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
   </component>
   <component name="ProjectId" id="2L5eWJAX1wYl0jwTIgJ5LNCOvwp" />
   <component name="ProjectViewState">
@@ -102,6 +156,7 @@
       <workItem from="1675767907200" duration="3389000" />
       <workItem from="1675800119880" duration="1293000" />
       <workItem from="1675801719033" duration="22000" />
+      <workItem from="1675806919554" duration="2632000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de Controlador y Entity de Repuesto y Category">
       <created>1675362202319</created>
