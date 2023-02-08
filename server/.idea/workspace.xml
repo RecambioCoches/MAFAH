@@ -6,20 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="8f668d27-67bb-4a59-9a24-7ef10e246c0e" name="Changes" comment="Creacion de Controlador y Entity de Repuesto y Category">
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/11.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/4.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/5.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/6.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/7.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/8.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/core/repuesto-data.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/core/repuesto.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/core/repuesto.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-detail/repuesto-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-detail/repuesto-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-edit/repuesto-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-edit/repuesto-edit.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-new/repuesto-new.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-new/repuesto-new.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-new/repuesto-new.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-new/repuesto-new.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eca17700-a850-49fd-bc8b-5ab25af0b3a3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eca17700-a850-49fd-bc8b-5ab25af0b3a3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/RepuestoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RepuestoController.php" afterDir="false" />
     </list>
@@ -157,6 +155,7 @@
       <workItem from="1675800119880" duration="1293000" />
       <workItem from="1675801719033" duration="22000" />
       <workItem from="1675806919554" duration="2632000" />
+      <workItem from="1675855288276" duration="2086000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de Controlador y Entity de Repuesto y Category">
       <created>1675362202319</created>

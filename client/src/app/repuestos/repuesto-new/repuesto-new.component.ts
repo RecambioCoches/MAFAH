@@ -34,7 +34,7 @@ export class RepuestoNewComponent implements OnInit {
 
   ngOnInit(): void {
     this.repuestoForm = this.fb.group({
-      title: [
+      name: [
         '',
         [
           Validators.required,
