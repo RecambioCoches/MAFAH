@@ -20,7 +20,7 @@ class Repuesto
     private ?int $price = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $shortDescription = null;
+    private ?string $model = null;
 
     #[ORM\Column(length: 1000)]
     private ?string $description = null;
@@ -76,15 +76,15 @@ class Repuesto
     }
 
 
-    public function getShortDescription(): ?string
+    public function getModel(): ?string
     {
-        return $this->shortDescription;
+        return $this->model;
     }
 
 
-    public function setShortDescription(?string $shortDescription): void
+    public function setModel(?string $model): void
     {
-        $this->shortDescription = $shortDescription;
+        $this->model = $model;
     }
 
 

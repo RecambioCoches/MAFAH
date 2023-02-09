@@ -31,7 +31,7 @@ export class RepuestoEditComponent implements OnInit {
   repuesto: Repuesto = {
     id: 0,
     name: '',
-    shortDescription: '',
+    model: '',
     description: '',
     price: 0,
     category: '',
@@ -55,7 +55,7 @@ export class RepuestoEditComponent implements OnInit {
           Validators.maxLength(50),
         ],
       ],
-      shortDescription: '',
+      model: '',
       description: '',
       price: '',
       category: '',
@@ -85,7 +85,7 @@ export class RepuestoEditComponent implements OnInit {
     this.repuestoForm.patchValue({
       name: this.repuesto.name,
       description: this.repuesto.description,
-      shortDescription: this.repuesto.shortDescription,
+      model: this.repuesto.model,
       price: this.repuesto.price,
       category: this.repuesto.category,
       image: this.repuesto.image,
@@ -120,7 +120,7 @@ export class RepuestoEditComponent implements OnInit {
         this.onSaveComplete();
       }
     } else {
-      this.errorMessage = 'Please correct the validation errors.';
+      this.errorMessage = 'Hay errores en la validación de los campos, porfavor corrígelo antes de guardar.';
     }
   }
 

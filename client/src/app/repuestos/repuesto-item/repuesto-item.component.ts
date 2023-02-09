@@ -11,7 +11,7 @@ export class RepuestoItemComponent {
     id: 0,
     name: '',
     price: 0,
-    shortDescription: '',
+    model: '',
     description: '',
     category: '',
     image: '',

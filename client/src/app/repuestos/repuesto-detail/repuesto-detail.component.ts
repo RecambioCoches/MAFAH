@@ -13,7 +13,7 @@ export class RepuestoDetailComponent implements OnInit {
     id: 0,
     name: '',
     price: 0,
-    shortDescription: '',
+    model: '',
     description: '',
     category: '',
     image: '',

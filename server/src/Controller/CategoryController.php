@@ -31,7 +31,7 @@ class CategoryController extends AbstractController
                 "id" => $repuesto->getId(),
                 "name" => $repuesto->getName(),
                 "price" => $repuesto->getPrice(),
-                "shortDescription" => $repuesto->getShortDescription(),
+                "shortDescription" => $repuesto->getModel(),
                 "Description" => $repuesto->getDescription(),
                 "category" => $repuesto->getCategory()->getName(),
                 "image"=>$repuesto->getImage()

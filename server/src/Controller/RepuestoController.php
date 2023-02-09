@@ -25,21 +25,16 @@ class RepuestoController extends AbstractController
         $repuesto->setName($content->name);
         $repuesto->setPrice($content->price);
         $repuesto->setDescription($content->description);
-        $repuesto->setShortDescription($content->shortDescription);
+        $repuesto->setModel($content->model);
          $categoryTemp = $doctrine->getRepository(Category::class)->findOneBy([
             "name" => $content->category]);
          $repuesto->setCategory($categoryTemp);
         $repuesto->setImage($content->image);
         $em->persist($repuesto);
         $em->flush();
-
-        $result = [
-            'name'=>$repuesto->getName(),
-            'price'=>$repuesto->getPrice()
-        ];
-        return $this->json([
-           $result
-        ]);
+        return $this->json(
+           $repuesto->getId()
+        );
     }
      
     #[Route('/repuesto', name: 'app_repuesto_list', methods: ["GET"])]
@@ -52,7 +47,7 @@ class RepuestoController extends AbstractController
                 "id" => $repuesto->getId(),
                 "name" => $repuesto->getName(),
                 "price" => $repuesto->getPrice(),
-                "shortDescription" => $repuesto->getShortDescription(),
+                "model" => $repuesto->getModel(),
                 "description" => $repuesto->getDescription(),
                 "category" => $repuesto->getCategory()->getName(),
                 "image"=>$repuesto->getImage()
@@ -75,7 +70,7 @@ class RepuestoController extends AbstractController
         $repuesto_json = [
                 "id" => $repuesto->getId(),
                 "name"=> $repuesto->getName(),
-                "shortDescription"=> $repuesto->getShortDescription(),
+                "model"=> $repuesto->getModel(),
                 "description"=> $repuesto->getDescription(),
                 "price"=> $repuesto->getPrice(),
                 "category"=> $repuesto->getCategory()->getName(),
@@ -97,20 +92,16 @@ class RepuestoController extends AbstractController
         $repuesto->setName($content->name);
         $repuesto->setPrice($content->price);
         $repuesto->setDescription($content->description);
-        $repuesto->setShortDescription($content->shortDescription);
+        $repuesto->setModel($content->model);
          $categoryTemp = $doctrine->getRepository(Category::class)->findOneBy([
             "name" => $content->category]);
          $repuesto->setCategory($categoryTemp);
         $repuesto->setImage($content->image);
         $em->persist($repuesto);
         $em->flush();
-        $result = [
-            'name'=>$repuesto->getName(),
-            'price'=>$repuesto->getPrice()
-        ];
-        return $this->json([
-           $result
-        ]);
+        return $this->json(
+           "Repuesto editado"
+        );
     }
 
     #[Route('/repuesto/delete/{id}', name: 'app_repuesto_delete')]
@@ -124,9 +115,9 @@ class RepuestoController extends AbstractController
         $em->remove($repuesto);
         $em->flush();
 
-        return $this->json([
-            "message" =>"Repuesto eliminado."
-        ]);
+        return $this->json(
+            "Repuesto eliminado."
+        );
     }
     
 }

@@ -18,7 +18,7 @@ export class RepuestoNewComponent implements OnInit {
   repuesto: Repuesto = {
     id: 0,
     name: '',
-    shortDescription: '',
+    model: '',
     description: '',
     price: 0,
     category: '',
@@ -42,7 +42,7 @@ export class RepuestoNewComponent implements OnInit {
           Validators.maxLength(50),
         ],
       ],
-      shortDescription: '',
+      model: '',
       description: '',
       price: '',
       category: '',

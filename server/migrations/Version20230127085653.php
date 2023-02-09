@@ -33,25 +33,25 @@ final class Version20230127085653 extends AbstractMigration
         $this->addSql("insert into category (id, name) values (11, 'Electronica');");
         $this->addSql("insert into category (id, name) values (12, 'Luces');");
 
-        $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (1, 'Válvulas', '125', 'Descripción Corta', 'Descripción larga', 'https://www.actualidadmotor.com/wp-content/uploads/2021/05/valvulas-motor.jpg', 1)");
+        $this->addSql("insert into repuesto (id, name, price, model, description, image, category_id) values (1, 'Válvulas', '125', 'Volksagen', 'Valvulas para un Volkswagen Golf', 'https://www.actualidadmotor.com/wp-content/uploads/2021/05/valvulas-motor.jpg', 2)");
 
-        $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (2, 'Llantas 25 pulgadas', '400', 'Descripción Corta', 'Descripción larga', 'https://www.sport-tuning-shop.com/large/SPACWHEELS-ATLANTIC-i2716.jpg', 7)");
+        $this->addSql("insert into repuesto (id, name, price, model, description, image, category_id) values (2, 'Llantas 25 pulgadas', '400', 'Spacwheels', 'Llantas de 25 pulgadas de la marca Spacwheels', 'https://www.sport-tuning-shop.com/large/SPACWHEELS-ATLANTIC-i2716.jpg', 7)");
 
-        $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (3, 'Alerón', '1000', 'Descripción Corta', 'Descripción larga', 'https://www.autohispania.com/product_thumb.php?img=images/productos/alern--zeus-pu-simoni-racing-1-5cb6e3f2b24cc.jpg&w=400&h=390', 8)");
+        $this->addSql("insert into repuesto (id, name, price, model, description, image, category_id) values (3, 'Alerón', '1000', 'Rocket Bunny', 'Alerón de la marca Rocket Bunny, conjunto de un kit aerodinámico', 'https://www.autohispania.com/product_thumb.php?img=images/productos/alern--zeus-pu-simoni-racing-1-5cb6e3f2b24cc.jpg&w=400&h=390', 8)");
 
-        $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (4, 'Líquido de frenos', '20', 'Descripción Corta', 'Descripción larga', 'https://lubricantesweb.es/tienda/3055-thickbox_default/liquido-de-frenos-motul-dot-51-500ml.jpg', 5)");
+        $this->addSql("insert into repuesto (id, name, price, model, description, image, category_id) values (4, 'Líquido de frenos', '20', 'Motul', 'Liquido de frenos de la marca Motul', 'https://lubricantesweb.es/tienda/3055-thickbox_default/liquido-de-frenos-motul-dot-51-500ml.jpg', 5)");
 
-        $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (5, 'Chasis Ford', '8000', 'Descripción Corta', 'Descripción larga', 'https://p.turbosquid.com/ts-thumb/6S/vDM0K1/bn/pickup_truck_chassis_4wd_ifs_render1/jpg/1605740207/600x600/fit_q87/27ab24e470de3027f10b8d6b4ab64491f963c732/pickup_truck_chassis_4wd_ifs_render1.jpg', 4)");
+        $this->addSql("insert into repuesto (id, name, price, model, description, image, category_id) values (5, 'Chasis', '8000', 'Ford', 'Chasis de una camioneta Ford Raptor', 'https://p.turbosquid.com/ts-thumb/6S/vDM0K1/bn/pickup_truck_chassis_4wd_ifs_render1/jpg/1605740207/600x600/fit_q87/27ab24e470de3027f10b8d6b4ab64491f963c732/pickup_truck_chassis_4wd_ifs_render1.jpg', 4)");
 
-        $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (6, 'Embrague', '5000', 'Descripción Corta', 'Descripción larga', 'https://noticias.coches.com/wp-content/uploads/2018/11/embrague-2.jpg', 3)");
+        $this->addSql("insert into repuesto (id, name, price, model, description, image, category_id) values (6, 'Embrague', '5000', 'Mercedes', 'Embrague para un Mercedes AMG GT-R', 'https://noticias.coches.com/wp-content/uploads/2018/11/embrague-2.jpg', 3)");
 
-        $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (7, 'Pistones', '250', 'Descripción Corta', 'Descripción larga', 'https://www.motociclismo.es/uploads/s1/97/62/83/3/piston.jpeg', 2)");
+        $this->addSql("insert into repuesto (id, name, price, model, description, image, category_id) values (7, 'Pistones', '250', 'Honda', 'Pistones para un Honda Civic', 'https://www.motociclismo.es/uploads/s1/97/62/83/3/piston.jpeg', 2)");
 
-        $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (8, 'Pastillas de freno', '120', 'Descripción Corta', 'Descripción larga', 'https://www.lubricantesenvenezuela.com/wp-content/uploads/2019/06/pastillas-freno.jpg', 1)");
+        $this->addSql("insert into repuesto (id, name, price, model, description, image, category_id) values (8, 'Pastillas de freno', '120', 'Brembo', 'Pastillas de freno universales de la marca Brembo', 'https://www.lubricantesenvenezuela.com/wp-content/uploads/2019/06/pastillas-freno.jpg', 1)");
 
-        $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (9, 'Discos de freno', '200', 'Descripción Corta', 'Descripción larga', 'https://www.brembo.com/es/PublishingImages/auto/primo-equipaggiamento/prodotti/dischi/COFUSO-FORI-3494-EST.jpg', 1)");
+        $this->addSql("insert into repuesto (id, name, price, model, description, image, category_id) values (9, 'Discos de freno', '200', 'Brembo', 'Disco de freno ventilado de alto rendimiento de la marca Brembo', 'https://www.brembo.com/es/PublishingImages/auto/primo-equipaggiamento/prodotti/dischi/COFUSO-FORI-3494-EST.jpg', 1)");
 
-        $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (10, 'Retrovisor', '50', 'Descripción Corta', 'Descripción larga', 'https://cdn.euautoteile.de/uploads/custom-catalog/eu/categories/500x500/13104.png', 4)");
+        $this->addSql("insert into repuesto (id, name, price, model, description, image, category_id) values (10, 'Retrovisor', '50', 'Ford', 'Retrovisor de un Ford Focus', 'https://cdn.euautoteile.de/uploads/custom-catalog/eu/categories/500x500/13104.png', 4)");
 
     }
 

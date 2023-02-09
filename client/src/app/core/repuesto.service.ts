@@ -10,40 +10,21 @@ import { Repuesto } from '../shared/repuesto';
   providedIn: 'root',
 })
 export class RepuestoService {
-  private repuestosAllUrl = 'http://localhost:8000/repuesto';
-  private repuestosDetailUrl = 'http://localhost:8000/repuesto/details';
-  private repuestosDeleteUrl = 'http://localhost:8000/repuesto/delete';
-  private repuestosUpdateUrl = 'http://localhost:8000/repuesto/edit';
+  private repuestosUrl = 'http://localhost:8000/repuesto';
   private repuestosNewUrl = 'http://localhost:8000/repuesto/new';
-
-
-
 
   constructor(private http: HttpClient) {}
 
-  //FUNCIONA BIEN
-  //NO MUESTRA UN CONSOLE LOG CON LOS DATOS DE LA API(INTENCIONADO)
   getRepuestos(): Observable<Repuesto[]> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
 
-    return this.http.get<any>(this.repuestosAllUrl,{headers}).pipe(
+    return this.http.get<any>(this.repuestosUrl,{headers}).pipe(
       catchError(this.handleError)
     );
   }
-
-
-  // getRepuestos(): Observable<Repuesto[]> {
-  //   const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-
-  //   return this.http.get<any>(this.repuestosAllUrl,{headers}).pipe(
-  //     tap((data) => console.log(JSON.stringify(data))),
-  //     catchError(this.handleError)
-  //   );
-  // }
   
-  //NO COMPROBADO
   getMaxRepuestoId(): Observable<number> {
-    return this.http.get<Repuesto[]>(this.repuestosAllUrl).pipe(
+    return this.http.get<Repuesto[]>(this.repuestosUrl).pipe(
       // Get max value from an array
       map((data) =>
         Math.max.apply(
@@ -56,42 +37,35 @@ export class RepuestoService {
       catchError(this.handleError)
     );
   }
-  //FUNCIONA BIEN
+
   getRepuestoById(id: number): Observable<Repuesto> {
-    const url = `${this.repuestosDetailUrl}/${id}`;
+    const url = `${this.repuestosUrl}/details/${id}`;
     return this.http.get<Repuesto>(url).pipe(
       tap((data) => console.log('getRepuesto: ' + JSON.stringify(data))),
       catchError(this.handleError)
     );
   }
-  //FUNCIONA BIEN
+
   createRepuesto(repuesto: Repuesto): Observable<Repuesto> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     repuesto.id = 0;
     return this.http
       .post<Repuesto>(this.repuestosNewUrl, repuesto, { headers: headers })
-      .pipe(
-        tap((data) => console.log('createRepuesto: ' + JSON.stringify(data))),
-        catchError(this.handleError)
-      );
+      .pipe(catchError(this.handleError));
   }
-  //FUNCIONA BIEN
+
   deleteRepuesto(id: number): Observable<{}> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    const url = `${this.repuestosDeleteUrl}/${id}`;
+    const url = `${this.repuestosUrl}/delete/${id}`;
     return this.http.delete<Repuesto>(url, { headers: headers }).pipe(
-      tap((data) => console.log('deleteRepuesto: ' + id)),
       catchError(this.handleError)
     );
   }
-  //NO FUNCIONA
+
   updateRepuesto(repuesto: Repuesto): Observable<Repuesto> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    const url = `${this.repuestosUpdateUrl}/${repuesto.id}`;
+    const url = `${this.repuestosUrl}/edit/${repuesto.id}`;
     return this.http.put<Repuesto>(url, repuesto,{ headers: headers }).pipe(
-      tap(() => console.log('updateRepuesto: ' + repuesto.id)),
-      // Return the repuesto on an update
-      map(() => repuesto),
       catchError(this.handleError)
     );
   }
