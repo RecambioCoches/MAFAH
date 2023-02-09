@@ -67,7 +67,7 @@ export class RepuestoNewComponent implements OnInit {
         this.onSaveComplete();
       }
     } else {
-      this.errorMessage = 'Please correct the validation errors.';
+      this.errorMessage = 'Hay errores en la validación de los campos, porfavor corrígelo antes de guardar.';
     }
   }
 

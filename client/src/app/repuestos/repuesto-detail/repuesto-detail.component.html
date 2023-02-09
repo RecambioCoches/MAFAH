@@ -1,24 +1,24 @@
-<figure class="figure">
-  <img src="{{repuesto.image}}">
-  <figcaption class="figure-caption">
-    <h4>Nombre: {{repuesto.name}}</h4>
-    <h5>Precio: {{repuesto.price}}€</h5>
-    <h5> Descripcion: {{repuesto.description}}</h5>
-    <h5>Categoria: {{repuesto.category}}</h5>
-  </figcaption>
-</figure>
-
-<div class="row mt-4">
-  <div class="col-md-4">
-    <button class="btn btn-secondary mr-3"
-            style="width:80px"
-            (click)="onBack()">
-      <i class="fa fa-chevron-left"></i> Atrás
-    </button>
-    <button class="btn btn-primary"
-            style="width:80px"
-            (click)="goEdit()">
-      Editar
-    </button>
+  <figure class="figure">
+    <img src="{{repuesto.image}}"width="350" height="300">
+    <figcaption class="figure-caption">
+      <h4>Nombre: <span style="color: grey;">{{repuesto.name}}</span></h4>
+      <h5>Precio: <span style="color: grey;">{{repuesto.price}}€</span></h5>
+      <h5>Descripcion: <span style="color: grey;">{{repuesto.description}}</span></h5>
+      <h5>Categoria: <span style="color: grey;">{{repuesto.category}}</span></h5>
+    </figcaption>
+  </figure>
+  
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <button class="btn btn-dark mr-3"
+              style="width:80px;margin: 10px"
+              (click)="onBack()">
+        <i class="fa fa-chevron-left"></i> Atrás
+      </button>
+      <button   class="btn btn-warning"
+              style="width:80px;margin: 10px"
+              (click)="goEdit()">
+        Editar
+      </button>
+    </div>
   </div>
-</div>

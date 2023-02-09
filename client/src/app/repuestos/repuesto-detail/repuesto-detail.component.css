@@ -2,10 +2,8 @@ figure {
   margin-top: 1em;
 }
 
-h4 {
-  color: blue;
-}
 
-h5 {
-  color: brown;
+
+h5,h4 {
+  color:black;
 }

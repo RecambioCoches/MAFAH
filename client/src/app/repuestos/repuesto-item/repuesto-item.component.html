@@ -1,11 +1,12 @@
 <figure class="figure">
-  <img src="{{repuesto.image}}" class="figure-img img-fluid rounded">
+  <img src="{{repuesto.image}}"width="320" height="300" class="figure-img  rounded">
   <figcaption class="figure-caption">
-    <h5><a>{{repuesto.name}}</a>
+    <h5><a>{{repuesto.name}} - </a>
       <span> {{repuesto.price }}€</span>
     </h5>
     <p>{{repuesto.shortDescription}}</p>
     <button class="btn btn-dark" [routerLink]="['/repuestos', repuesto.id]">Detalles</button>
+    
   </figcaption>
 </figure>
 

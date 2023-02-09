@@ -15,7 +15,7 @@
           <input class="form-control"
                  id="repuestoNameId"
                  type="text"
-                 placeholder="Name (required)"
+                 placeholder="Nombre (requirido)"
                  formControlName="name"
                  name="name" />
         </div>
@@ -28,7 +28,7 @@
         <div class="col-md-8">
           <textarea class="form-control"
                     id="shortdescriptionId"
-                    placeholder="Short Description"
+                    placeholder="Descripción corta"
                     rows=3
                     formControlName="shortDescription"
                     name="shortDescription"></textarea>
@@ -42,7 +42,7 @@
         <div class="col-md-8">
           <textarea class="form-control"
                     id="descriptionId"
-                    placeholder="Description"
+                    placeholder="Descripción"
                     rows=3
                     formControlName="description"
                     name="description"></textarea>
@@ -56,7 +56,7 @@
         <div class="col-md-8">
           <input class="form-control"
                     id="priceId"
-                    placeholder="Price"
+                    placeholder="Precio"
                     formControlName="price"
                     name="price" />
         </div>
@@ -95,7 +95,7 @@
           <div class="col-md-8">
             <input class="form-control"
                       id="imageId"
-                      placeholder="Images"
+                      placeholder="Enlace imagen"
                       formControlName="image"
                       name="image" />
           </div>
@@ -104,13 +104,14 @@
 
       <div class="form-group row mb-2">
         <div class="offset-md-2 col-md-4">
-          <button class="btn btn-primary mr-3"
-                  type="submit">
+          <button  class="btn btn-primary mr-3"
+                  type="submit"
+                  title="Guadar">
             Guardar
           </button>
-          <button class="btn btn-outline-secondary mr-3"
+          <button style="margin: 10px" class="btn btn-outline-secondary mr-3"
                   type="button"
-                  title="Cancel your edits"
+                  title="Cancelar"
                   [routerLink]="['']">
             Cancelar
           </button>

@@ -10,7 +10,7 @@
   
         <div class="form-group row mb-2">
           <label class="col-md-2 col-form-label"
-                 for="repuestoNameId">Nombre repuesto</label>
+                 for="repuestoNameId">Nombre</label>
           <div class="col-md-8">
             <input class="form-control"
                    id="repuestoNameId"
@@ -22,12 +22,12 @@
         </div>
         <div class="form-group row mb-2">
           <label class="col-md-2 col-form-label"
-                 for="shortdescriptionId">descripcion corta</label>
+                 for="shortdescriptionId">Descripción corta</label>
   
           <div class="col-md-8">
             <textarea class="form-control"
                       id="shortdescriptionId"
-                      placeholder="Descripcion corta"
+                      placeholder="Descripción corta"
                       rows=3
                       formControlName="shortDescription"
                       name="shortDescription"></textarea>
@@ -36,12 +36,12 @@
   
         <div class="form-group row mb-2">
           <label class="col-md-2 col-form-label"
-                 for="descriptionId">Descripcion</label>
+                 for="descriptionId">Descripción</label>
   
           <div class="col-md-8">
             <textarea class="form-control"
                       id="descriptionId"
-                      placeholder="Descripcion"
+                      placeholder="Descripción"
                       rows=3
                       formControlName="description"
                       name="description"></textarea>
@@ -64,7 +64,7 @@
   
         <div class="form-group row mb-2">
           <label class="col-md-2 col-form-label"
-                 for="categoriesId">categoria</label>
+                 for="categoriesId">Categoria</label>
   
           <div class="col-md-8">
             <select class="form-control"
@@ -102,19 +102,19 @@
         </div>
   
         <div class="form-group row mb-2">
-          <div class="offset-md-2 col-md-4">
-            <button class="btn btn-success mr-3"
+          <div class="offset-md-2 col-md-5">
+            <button style="margin: 10px" class="btn btn-success mr-3"
                     type="submit"
                     title="Guardar este repuesto">
               Guardar
             </button>
-            <button class="btn btn btn-warning mr-3"
+            <button style="margin: 10px" class="btn btn btn-warning mr-3"
                     type="button"
                     title="Dejar de editar"
                     [routerLink]="['']">
               Cancelar
             </button>
-            <button class="btn btn-danger"
+            <button style="margin: 10px" class="btn btn-danger"
                     type="button"
                     title="Borrar este repuesto"
                     (click)="deleteRepuesto()">
