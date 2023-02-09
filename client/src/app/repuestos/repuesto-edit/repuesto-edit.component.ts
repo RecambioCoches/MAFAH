@@ -31,9 +31,9 @@ export class RepuestoEditComponent implements OnInit {
   repuesto: Repuesto = {
     id: 0,
     name: '',
-    price: 0,
     shortDescription: '',
     description: '',
+    price: 0,
     category: '',
     image: '',
   };
@@ -55,10 +55,10 @@ export class RepuestoEditComponent implements OnInit {
           Validators.maxLength(50),
         ],
       ],
-      category: '',
-      price: '',
-      description: '',
       shortDescription: '',
+      description: '',
+      price: '',
+      category: '',
       image: '',
     });
 
@@ -84,9 +84,9 @@ export class RepuestoEditComponent implements OnInit {
     // Update the data on the form
     this.repuestoForm.patchValue({
       name: this.repuesto.name,
-      price: this.repuesto.price,
       description: this.repuesto.description,
       shortDescription: this.repuesto.shortDescription,
+      price: this.repuesto.price,
       category: this.repuesto.category,
       image: this.repuesto.image,
     });

@@ -64,7 +64,7 @@ export class RepuestoService {
       catchError(this.handleError)
     );
   }
-  //NO COMPROBADO
+  //FUNCIONA BIEN
   createRepuesto(repuesto: Repuesto): Observable<Repuesto> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     repuesto.id = 0;
@@ -88,7 +88,7 @@ export class RepuestoService {
   updateRepuesto(repuesto: Repuesto): Observable<Repuesto> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     const url = `${this.repuestosUpdateUrl}/${repuesto.id}`;
-    return this.http.put<Repuesto>(url, "repuesto", { headers: headers }).pipe(
+    return this.http.put<Repuesto>(url, repuesto,{ headers: headers }).pipe(
       tap(() => console.log('updateRepuesto: ' + repuesto.id)),
       // Return the repuesto on an update
       map(() => repuesto),

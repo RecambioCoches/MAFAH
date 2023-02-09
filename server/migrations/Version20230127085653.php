@@ -28,6 +28,10 @@ final class Version20230127085653 extends AbstractMigration
         $this->addSql("insert into category (id, name) values (6, 'Neumáticos');");
         $this->addSql("insert into category (id, name) values (7, 'Llantas');");
         $this->addSql("insert into category (id, name) values (8, 'Aerodinámica');");
+        $this->addSql("insert into category (id, name) values (9, 'Interior');");
+        $this->addSql("insert into category (id, name) values (10, 'Chapa');");
+        $this->addSql("insert into category (id, name) values (11, 'Electronica');");
+        $this->addSql("insert into category (id, name) values (12, 'Luces');");
 
         $this->addSql("insert into repuesto (id, name, price, shortDescription, description, image, category_id) values (1, 'Válvulas', '125', 'Descripción Corta', 'Descripción larga', 'https://via.placeholder.com/350X300', 1)");
 
