@@ -13,6 +13,7 @@ export class RepuestoService {
   private repuestosUrl = 'http://localhost:8000/repuesto';
   private repuestosNewUrl = 'http://localhost:8000/repuesto/new';
 
+
   constructor(private http: HttpClient) {}
 
   getRepuestos(): Observable<Repuesto[]> {
@@ -22,7 +23,7 @@ export class RepuestoService {
       catchError(this.handleError)
     );
   }
-  
+
   getMaxRepuestoId(): Observable<number> {
     return this.http.get<Repuesto[]>(this.repuestosUrl).pipe(
       // Get max value from an array

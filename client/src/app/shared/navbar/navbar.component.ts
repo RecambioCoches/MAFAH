@@ -17,6 +17,6 @@ export class NavbarComponent implements OnInit {
   newRepuesto() {
     // Get max repuesto Id from the repuesto list
     this.repuestoService.getMaxRepuestoId().subscribe((data) => (this.id = data));
-    this.router.navigate(['/repuestos', this.id, 'new']);
+    this.router.navigate(['/repuestos', this.id+1, 'new']);
   }
 }

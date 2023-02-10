@@ -119,5 +119,30 @@ class RepuestoController extends AbstractController
             "Repuesto eliminado."
         );
     }
+
+
+    #[Route('/repuesto/search/{name}', name: 'app_repuesto_search', methods: ["GET"])]
+    public function repuestosearch($name,ManagerRegistry $doctrine): Response
+    {
+        $repuestos = $doctrine->getRepository(Repuesto::class)->findAll();
+        $repuestos_json=[];
+        foreach ($repuestos as $repuesto){
+            if (str_contains($repuesto->getName(), $name)){
+                $tmp = [
+                "id" => $repuesto->getId(),
+                "name" => $repuesto->getName(),
+                "price" => $repuesto->getPrice(),
+                "model" => $repuesto->getModel(),
+                "description" => $repuesto->getDescription(),
+                "category" => $repuesto->getCategory()->getName(),
+                "image"=>$repuesto->getImage()
+            ];
+            $repuestos_json[] = $tmp;
+            }
+        }
+        return $this->json(
+            $repuestos_json
+        );
+    }
     
 }
