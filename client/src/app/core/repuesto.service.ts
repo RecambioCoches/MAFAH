@@ -10,8 +10,8 @@ import { Repuesto } from '../shared/repuesto';
   providedIn: 'root',
 })
 export class RepuestoService {
-  private repuestosUrl = 'http://localhost:8000/repuesto';
-  private repuestosNewUrl = 'http://localhost:8000/repuesto/new';
+  private repuestosUrl = 'https://localhost:8000/repuesto';
+  private repuestosNewUrl = 'https://localhost:8000/repuesto/new';
 
 
   constructor(private http: HttpClient) {}
