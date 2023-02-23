@@ -7,8 +7,10 @@ import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { RepuestosModule } from './repuestos/repuestos.module';
 import { SharedModule } from './shared/shared.module';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, RegisterComponent, LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

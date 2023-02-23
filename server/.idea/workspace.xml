@@ -5,17 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f668d27-67bb-4a59-9a24-7ef10e246c0e" name="Changes" comment="Creacion de Controlador y Entity de Repuesto y Category">
+      <change afterPath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230223084559.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230223113630.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Buyer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Seller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/BuyerRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/SellerRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/CustomAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/0.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/10.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/13.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/14.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/15.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/15.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/2.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/3.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/9.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-new/repuesto-new.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/repuestos/repuesto-new/repuesto-new.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app/core/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/core/core.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eca17700-a850-49fd-bc8b-5ab25af0b3a3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eca17700-a850-49fd-bc8b-5ab25af0b3a3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20230127085653.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20230127085653.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RepuestoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RepuestoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,15 +126,33 @@
       <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/password-hasher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/stella-maris/clock" />
     </include_path>
   </component>
   <component name="ProjectId" id="2L5eWJAX1wYl0jwTIgJ5LNCOvwp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -112,6 +162,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -130,7 +181,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Symfony" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="symfony-server">
+    <configuration name="Symfony" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" is_https="true" server_name="symfony-server">
       <method v="2" />
     </configuration>
   </component>
@@ -156,6 +207,9 @@
       <workItem from="1675970852889" duration="2031000" />
       <workItem from="1675977333964" duration="3336000" />
       <workItem from="1676014703528" duration="4210000" />
+      <workItem from="1677141230823" duration="4279000" />
+      <workItem from="1677145653474" duration="1226000" />
+      <workItem from="1677149242688" duration="2874000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de Controlador y Entity de Repuesto y Category">
       <created>1675362202319</created>
@@ -171,6 +225,7 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Creacion de Controlador y Entity de Repuesto y Category" />
     <option name="LAST_COMMIT_MESSAGE" value="Creacion de Controlador y Entity de Repuesto y Category" />
   </component>
