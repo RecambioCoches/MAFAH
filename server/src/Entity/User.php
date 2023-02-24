@@ -12,7 +12,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 #[ORM\InheritanceType('SINGLE_TABLE')]
 #[ORM\DiscriminatorColumn(name: 'roles', type: 'simple_array')]
 #[ORM\DiscriminatorMap(['user' => User::class, 'seller' => Seller::class, 'buyer' => Buyer::class])]
-class User implements UserInterface,PasswordAuthenticatedUserInterface
+class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -84,13 +84,12 @@ class User implements UserInterface,PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function eraseCredentials()
-    {
+    public function eraseCredentials() {
         $this->password = "";
     }
 
-    public function getUserIdentifier(): string
-    {
-        return $this->username;
+    public function getUserIdentifier(): string {
+        return $this->getUsername();
     }
+
 }
