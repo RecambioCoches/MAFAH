@@ -28,8 +28,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?bool $isActive = null;
 
-    #[ORM\Column(type: Types::SIMPLE_ARRAY)]
-    private array $roles = ['ROLE_USER'];
+//    #[ORM\Column(type: Types::SIMPLE_ARRAY)]
+//    private array $roles = ['ROLE_USER'];
 
     public function getId(): ?int
     {
@@ -74,7 +74,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     public function getRoles(): array
     {
-        return $this->roles;
+        return ['ROLE_USER'];
     }
 
     public function setRoles(array $roles): self
