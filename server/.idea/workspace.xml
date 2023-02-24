@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f668d27-67bb-4a59-9a24-7ef10e246c0e" name="Changes" comment="Creacion de Controlador y Entity de Repuesto y Category">
-      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/10.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/9.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.angular/cache/15.1.4/angular-webpack/53f4135821bf8ac5a5d2c7e9738df97e2415527c/index.pack.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +168,8 @@
       <workItem from="1677141230823" duration="4279000" />
       <workItem from="1677145653474" duration="1226000" />
       <workItem from="1677149242688" duration="2874000" />
-      <workItem from="1677226638174" duration="732000" />
+      <workItem from="1677226638174" duration="813000" />
+      <workItem from="1677227498139" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de Controlador y Entity de Repuesto y Category">
       <created>1675362202319</created>
