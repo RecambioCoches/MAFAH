@@ -1,5 +1,5 @@
 import os
-rama = input("¿A que rama quieres entrar? (vacio para main): ").strip()
+rama = input("¿A que rama quieres relizar el commit? (vacio para main): ").strip()
 commit = input("¿Cual es el mensaje del commit?: ").strip()
 os.system("git add .")
 if  commit == "":

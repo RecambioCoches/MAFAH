@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f668d27-67bb-4a59-9a24-7ef10e246c0e" name="Changes" comment="Creacion de Controlador y Entity de Repuesto y Category">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8f668d27-67bb-4a59-9a24-7ef10e246c0e" name="Changes" comment="Creacion de Controlador y Entity de Repuesto y Category" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,6 +168,7 @@
       <workItem from="1677149242688" duration="2874000" />
       <workItem from="1677226638174" duration="813000" />
       <workItem from="1677227498139" duration="6000" />
+      <workItem from="1677238707418" duration="245000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de Controlador y Entity de Repuesto y Category">
       <created>1675362202319</created>
